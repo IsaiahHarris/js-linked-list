@@ -64,6 +64,7 @@ function linkedListGenerator() {
     newNode.value = value;
     newNode.next = null;
     if (!currentNode) {
+      
       return false
     } else if(!previousNode) {
       newNode.next = head;
