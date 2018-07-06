@@ -9,7 +9,6 @@ function linkedListGenerator() {
 
   function getHead() {
     return head
-
   }
   function getTail() {
     return tail
@@ -41,10 +40,9 @@ function linkedListGenerator() {
     return false;
   }
   function remove(num) {
-
     let nextNode = get(num + 1);
     let currentNode = get(num);
-    let counter = 0
+    let counter = 0;
     let previousNode = get(num - 1);
     if (num === 0) {
       head = nextNode
@@ -63,8 +61,7 @@ function linkedListGenerator() {
     let newNode = {};
     newNode.value = value;
     newNode.next = null;
-    if (!currentNode) {
-      
+    if (!currentNode) {        
       return false
     } else if(!previousNode) {
       newNode.next = head;
@@ -84,4 +81,3 @@ function linkedListGenerator() {
     get: get
   }
 }
-  
